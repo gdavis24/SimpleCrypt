@@ -18,11 +18,17 @@ public class ROT13  {
 
     public String crypt(String text) throws UnsupportedOperationException {
 
-        return "";
+        return text;
     }
 
     public String encrypt(String text) {
-        return text;
+
+        String result1 = "";
+        for (int i = 0; i < text.length(); i++) {
+            result1 += text.charAt(i);
+            System.out.println(result1);
+        }
+        return result1;
     }
 
     public String decrypt(String text) {
